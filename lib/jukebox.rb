@@ -25,6 +25,8 @@ def play(songs)
   user_input = gets.chomp
   song_name = ""
   
+  if user_input.to_i <=0 && user_input.to_i > 
+  
   if user_input.to_i == 0 
     song_name = user_input
     puts "Playing #{song_name}"
