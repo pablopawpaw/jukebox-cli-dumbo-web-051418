@@ -31,7 +31,7 @@ def play(songs)
     song_name = user_input
     puts "Playing #{song_name}"
     return song_name
-  elsif user_input.to_i != 0 && songs.include?(user_input.to_i-1)
+  elsif user_input.to_i != 0 && user_input.to_i < songs.length
     song_name = songs[(user_input.to_i)-1]
     puts "Playing #{song_name}"
     return song_name
