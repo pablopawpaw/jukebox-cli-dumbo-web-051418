@@ -25,7 +25,9 @@ def play(songs)
   user_input = gets.chomp
   song_name = ""
   
-  if user_input.to_i <=0 && user_input.to_i > 
+  if user_input.to_i <=0 && user_input.to_i > 9
+    puts "Invalid input, please try again"
+  end 
   
   if user_input.to_i == 0 
     song_name = user_input
